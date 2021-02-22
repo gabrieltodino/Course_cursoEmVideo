@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+
+    <style>
+        body {
+            background-color: #084d6e;
+        }
+
+        div.container {
+            max-width: 920px;
+            margin: auto;
+            text-align: center;
+            font-weight: lighter;
+            padding-bottom: 15px;
+            color: white;
+        }
+
+        h1 {
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        input[type="text"] {
+            height: 13px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background-color: #dfdfdf;
+            padding: 5px;
+            font-size: 13pt;
+        }
+
+        input[type="button"] {
+            margin-top: 25px;
+            padding: 5px 10px;
+            font-size: 12pt;
+            border-radius: 7px;
+            border: 1px solid #778899;
+            background-color: #4682b4;
+            transition: 300ms;
+            color: #ccc;
+        }
+
+        input[type="button"]:hover {
+            background-color: #5d8aa8;
+        }
+
+        div#origem{
+            margin-top: 25px;
+            border-bottom: 1px solid #dfdfdf;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Nacionalidade</h1>
+
+        <label>Insira seus pais de origem: </label><input type="text" name="strnac" id="strnac"></br>
+        <input type="button" value="Enviar!" onclick="DefNac()">
+        <div id="origem"></div>
+    </div>
+
+    <script>
+        function DefNac() {
+            var nac = document.querySelector('input#strnac').value
+            var res = document.querySelector('div#origem')
+
+            if(nac == "Brasil" || nac == "brasil"){
+                res.innerHTML = `Voce eh brasileiro, originario do Brasil!` 
+            }else{
+                if(nac[nac.length - 1] == "a"){
+                    res.innerHTML = `Voce eh estrangeiro, originario da ${nac}!` 
+                }else{
+                    res.innerHTML = `Voce eh estrangeiro, originario do ${nac}!` 
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

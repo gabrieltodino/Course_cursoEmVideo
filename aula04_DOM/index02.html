@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 03</title>
+
+    <style>
+        div#area{
+            background: green;
+            color: white;
+
+            width: 200px;
+            height: 200px;
+
+            line-height: 200px;
+
+            text-align: center;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>  
+
+    <div id="area" onclick="clicar()"><!--Evento disparado pelo proprio HTML-->
+        Interaja
+    </div>
+
+    <script>
+        function clicar() {
+            let a = document.getElementById('area')
+            a.innerText = 'Clicado!'
+        }
+
+        //evento disparado pelo javascript
+        var a = document.getElementById('area')
+        a.addEventListener('mouseenter', entrar)//procura eventos no elemento
+        a.addEventListener('mouseout', saiu)
+        
+        function saiu(){
+            a.innerText = 'saiu!'
+        }
+
+        function entrar(){
+            a.innerText = 'entrou!'
+        }
+
+    </script>
+</body>
+</html>

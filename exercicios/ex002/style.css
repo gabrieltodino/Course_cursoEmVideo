@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    font: normal 15pt Arial;
+}
+
+body{
+    background-color: #3681d4;
+}
+
+div.container{
+    max-width: 750px;
+    margin: 7% auto;
+}
+
+header, footer{
+    text-align: center;
+    color: #ddd;
+}
+
+section.content-wrapper{
+    background-color: #e7eae9;
+    margin: 35px 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+}
+
+div.content{
+    text-align: center;
+}
+
+div.img_hour{
+    margin-top: 25px;
+}
+
+div.img_hour img{
+    max-width: 250px;
+    min-height: 250px;
+    border-radius: 50%;
+}

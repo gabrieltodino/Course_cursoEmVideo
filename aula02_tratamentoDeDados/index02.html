@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 02</title>
+</head>
+<body>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um numero:'))
+
+        //replace('','') troca o valor inserido nas primeiras aspas, pelo valor inserido na segunda
+        alert(n1.toFixed(2).replace('.',','))//formata para que o numero tenha 2 casas
+
+        //toLocaleString(), transforma o valor em monetario
+        alert(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+    </script>
+</body>
+</html>

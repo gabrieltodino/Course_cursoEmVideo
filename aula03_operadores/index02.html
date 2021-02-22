@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 03</title>
+</head>
+<body>  
+
+    <script>
+        //operadores relacionais: < > <= >= == !=, verificam valores
+        //operadores de identidade: === !==, verificam se um valor eh exatamente igual, em valor e tipo
+        console.log(5 == '5')//true
+        console.log(5 === '5')//false
+
+        //operadores logicos: !(negacao) &&(conjuncao/e) ||(disjuncao/ou)
+        //! inverte o booleano recebido. && retorna true se ambos forem true. || retorna true se um dos valores forem true
+        //!
+        console.log(!false)//true
+        //&&
+        console.log(false && true)//false
+        console.log(true && true)//true
+        //||
+        console.log(false || false)//false
+        console.log(false || true)//true
+        console.log(true || true)//true
+
+        //ordem de execucao: negacao e ou
+        //ordem na expressao:aritmeticos, relacionais, logicos 
+
+        //operadores ternarios, teste logico de linha unica
+        //teste ? true : false
+        var x = 10
+        var y = 5
+        x == 10 ? console.log("= 10") : console.log("!= 10") 
+        y > 10 ? console.log(">10") : console.log("<10") 
+        //podemos usar essa operador para definir variaveis
+        var res = x % 2 == 0 ? 5: 9
+        console.log(res)
+    </script>
+</body>
+</html>

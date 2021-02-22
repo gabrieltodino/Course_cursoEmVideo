@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color: #3681d4;
+    font: normal 15pt Arial;
+}
+
+div.container{
+    max-width: 750px;
+    margin: 3% auto;
+}
+
+header, footer{
+    text-align: center;
+    color: #ddd;
+}
+
+section.content-wrapper{
+    background-color: #e7eae9;
+    margin: 35px 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+}
+
+section.content-wrapper .count_input label{
+    display: inline-block;
+    width:70px;
+}
+
+section.content-wrapper .count_input input{
+    margin-bottom: 10px;
+}
+
+section.content-wrapper .count_input input:last-of-type{
+    margin: 20px 0;
+}

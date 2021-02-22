@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 02</title>
+</head>
+<body>
+    <p id="paragraph"></p>
+
+    <script>
+        //Number() converte o valor para um numero
+        var n1 = Number(window.prompt('Digite um numero:')) //recebe string
+        var n2 = Number(window.prompt('Digite outro numero:')) //recebe string
+
+        var s = n1 + n2
+
+        window.alert('A soma dos valores eh, ' + String(s)) //String() converte o valor em string
+
+
+        //template string, forma de exibir valores, sem precisar concatenar
+        //window.alert(`A soma dos valores eh ${s}`)
+    </script>
+</body>
+</html>
